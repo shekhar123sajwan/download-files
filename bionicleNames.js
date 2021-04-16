@@ -1,0 +1,15 @@
+var nm1=["","","","","b","d","g","h","j","k","l","lh","m","n","p","ph","r","s","t","v","vh","w","wh"];var nm2=["aa","ua","ou","ai","a","e","i","o","u","a","e","i","o","u","a","e","i","o","u","a","e","i","o","u","a","e","i","o","u"];var nm3=["c","ck","d","dh","dr","f","h","hn","hm","hkm","hl","hr","j","k","kh","kn","l","ll","lt","m","n","ng","p","r","rh","rk","rd","rkh","s","t","v","vn","w","wk","yl","z"];var nm4=["ou","ii","ui","au","ua","a","e","i","o","u","a","e","i","o","u","a","e","i","o","u","a","e","i","o","u","a","e","i","o","u","a","e","i","o","u"];var nm5=["k","l","m","n","ng","p","r","t","tt","w"];var nm6=["","","","","","k","m","n","p","r","s"];var nm7=["","","","","","","","","b","br","c","g","gr","h","j","k","m","p","pr","r","s","str","t","th","tr","v","z"];var nm8=["ii","ei","a","e","i","o","u","a","e","o","u","a","e","i","o","u","a","e","o","u"];var nm9=["bd","ck","d","dd","dg","dr","g","hl","hm","k","kr","kt","l","ld","lg","ll","lm","lr","n","nd","nt","r","rb","rbr","rd","rdr","rt","sd","st","t","td","tr","v","x","z"];var nm10=["a","i","e","o","u","a","i","e","o","u","y"];var nm11=["d","k","m","n","p","r","t","v","x"];var nm12=["","","","h","k","kk","l","m","n","nn","r","s","sh","x","z"];var br="";function nameGen(type){var tp=type;$('#placeholder').css('textTransform','capitalize');var element=document.createElement("div");element.setAttribute("id","result");for(i=0;i<10;i++){if(tp===1){nameFem();while(nMs===""){nameFem();}}else{nameMas();while(nMs===""){nameMas();}}
+br=document.createElement('br');element.appendChild(document.createTextNode(nMs));element.appendChild(br);}
+if(document.getElementById("result")){document.getElementById("placeholder").removeChild(document.getElementById("result"));}
+document.getElementById("placeholder").appendChild(element);}
+function nameMas(){nTp=Math.random()*6|0;rnd=Math.random()*nm1.length|0;rnd2=Math.random()*nm2.length|0;rnd3=Math.random()*nm3.length|0;rnd4=Math.random()*nm4.length|0;rnd5=Math.random()*nm6.length|0;if(nTp<4){while(nm3[rnd3]===nm6[rnd5]||nm3[rnd3]===nm1[rnd]){rnd3=Math.random()*nm3.length|0;}
+nMs=nm1[rnd]+nm2[rnd2]+nm3[rnd3]+nm4[rnd4]+nm6[rnd5];}else{rnd6=Math.random()*nm5.length|0;rnd7=Math.random()*nm4.length|0;while(nm6[rnd5]===nm5[rnd6]||nm5[rnd6]===nm3[rnd3]){rnd6=Math.random()*nm5.length|0;}
+while(rnd2<4){rnd2=Math.random()*nm2.length|0;}
+while(rnd4<5){rnd4=Math.random()*nm2.length|0;}
+while(rnd7<5){rnd7=Math.random()*nm2.length|0;}
+nMs=nm1[rnd]+nm2[rnd2]+nm3[rnd3]+nm4[rnd4]+nm5[rnd6]+nm4[rnd7]+nm6[rnd5];}
+testSwear(nMs);}
+function nameFem(){nTp=Math.random()*6|0;rnd=Math.random()*nm7.length|0;rnd2=Math.random()*nm8.length|0;rnd3=Math.random()*nm9.length|0;rnd4=Math.random()*nm10.length|0;rnd5=Math.random()*nm12.length|0;if(nTp<4){while(nm9[rnd3]===nm12[rnd5]||nm9[rnd3]===nm7[rnd]){rnd3=Math.random()*nm9.length|0;}
+nMs=nm7[rnd]+nm8[rnd2]+nm9[rnd3]+nm10[rnd4]+nm12[rnd5];}else{rnd6=Math.random()*nm11.length|0;rnd7=Math.random()*nm10.length|0;while(nm12[rnd5]===nm11[rnd6]||nm11[rnd6]===nm9[rnd3]){rnd6=Math.random()*nm11.length|0;}
+nMs=nm7[rnd]+nm8[rnd2]+nm9[rnd3]+nm10[rnd4]+nm11[rnd6]+nm10[rnd7]+nm12[rnd5];}
+testSwear(nMs);}
